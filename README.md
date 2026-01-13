@@ -1,4 +1,5 @@
 🚄 Vande Bharat Express - Movie Platform Redesign
+
 🎬 About This Project
 This project reimagines the entertainment experience for passengers on India's flagship Vande Bharat Express trains. Born from firsthand observation of the gap between the train's modern infrastructure and its outdated digital entertainment system, this platform demonstrates how thoughtful design can enhance the passenger journey.
 🎯 Problem Statement
