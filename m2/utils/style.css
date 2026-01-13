@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary: #06837f;
+    /* Teal */
+    --secondary: #fdc100;
+    /* Gold */
+    --tertiary: #02cecb;
+    /* Cyan */
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Remove default Streamlit styling */
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+.main {
+    background: #0a0a0a;
+    padding: 2.5rem 1.5rem;
+}
+
+.stApp {
+    background: #0a0a0a;
+}
+
+.block-container {
+    padding-top: 1rem !important;
+    max-width: 1400px;
+}
+
+/* Header Styling */
+h1 {
+    color: var(--tertiary) !important;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem !important;
+    margin-bottom: 0.5rem !important;
+    text-shadow: 0 0 20px rgba(2, 206, 203, 0.5);
+}
+
+.subtitle {
+    color: #d1d5db !important;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+
+/* Selectbox Styling - MAXIMUM VISIBILITY */
+.stSelectbox {
+    margin-bottom: 1.5rem;
+}
+
+.stSelectbox>label {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Main selectbox container - BIGGER */
+.stSelectbox>div>div {
+    background-color: #1a1a1a !important;
+    border: 2px solid var(--primary) !important;
+    border-radius: 8px !important;
+    padding: 1.25rem !important;
+    min-height: 65px !important;
+    font-size: 1.4rem !important;
+}
+
+/* CRITICAL: Force LARGE WHITE text everywhere in selectbox */
+.stSelectbox div,
+.stSelectbox span,
+.stSelectbox input,
+.stSelectbox [role="button"],
+.stSelectbox [role="button"]>div,
+.stSelectbox [role="button"] span,
+.stSelectbox [data-baseweb="select"] div,
+.stSelectbox [data-baseweb="select"] span,
+.stSelectbox [data-baseweb="select"]>div>div,
+.stSelectbox * {
+    color: #ffffff !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+}
+
+/* Dropdown menu - DARK BACKGROUND */
+.stSelectbox [role="listbox"],
+.stSelectbox ul,
+.stSelectbox [data-baseweb="popover"],
+.stSelectbox [data-baseweb="popover"]>div,
+.stSelectbox [data-baseweb="menu"],
+.stSelectbox [data-baseweb="menu"]>ul {
+    background-color: #1a1a1a !important;
+    border: 2px solid var(--primary) !important;
+}
+
+/* Dropdown options - LARGE TEXT */
+.stSelectbox [role="option"],
+.stSelectbox [role="option"]>div,
+.stSelectbox [role="option"] span {
+    color: #ffffff !important;
+    background-color: #1a1a1a !important;
+    padding: 1.25rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    line-height: 1.6 !important;
+}
+
+.stSelectbox [role="option"]:hover {
+    background-color: rgba(6, 131, 127, 0.3) !important;
+    color: #ffffff !important;
+}
+
+/* Selected option */
+.stSelectbox [aria-selected="true"] {
+    background-color: rgba(6, 131, 127, 0.4) !important;
+    color: #ffffff !important;
+}
+
+/* Hover and focus states */
+.stSelectbox>div>div:hover {
+    border-color: var(--tertiary) !important;
+    box-shadow: 0 0 15px rgba(2, 206, 203, 0.3);
+}
+
+.stSelectbox>div>div:focus-within {
+    border-color: var(--tertiary) !important;
+    box-shadow: 0 0 20px rgba(2, 206, 203, 0.4) !important;
+}
+
+/* Button Styling */
+.stButton>button {
+    background: linear-gradient(135deg, var(--primary), var(--tertiary));
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+    box-shadow: 0 0 20px rgba(6, 131, 127, 0.3);
+}
+
+.stButton>button:hover {
+    background: linear-gradient(135deg, var(--tertiary), var(--primary));
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(2, 206, 203, 0.5);
+}
+
+/* Slider Styling */
+.stSlider>label {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+}
+
+.stSlider>div>div>div {
+    background: #2a2a2a;
+}
+
+.stSlider>div>div>div>div {
+    background: var(--primary);
+    box-shadow: 0 0 10px rgba(6, 131, 127, 0.5);
+}
+
+/* Expander Styling */
+.streamlit-expanderHeader {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+    border: 2px solid var(--primary) !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 1rem !important;
+    padding: 1rem !important;
+    transition: all 0.3s ease !important;
+}
+
+.streamlit-expanderHeader:hover {
+    border-color: var(--secondary) !important;
+    background: #1f1f1f !important;
+    box-shadow: 0 0 15px rgba(253, 193, 0, 0.3);
+}
+
+.streamlit-expanderContent {
+    background: #141414;
+    border: 2px solid var(--primary);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 1.5rem;
+    margin-top: -2px;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background: #0f0f0f;
+    border-right: 2px solid var(--primary);
+}
+
+[data-testid="stSidebar"]>div:first-child {
+    background: #0f0f0f;
+}
+
+.sidebar-title {
+    color: var(--tertiary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary);
+    text-shadow: 0 0 10px rgba(2, 206, 203, 0.5);
+}
+
+.info-box {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 2px solid var(--tertiary);
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 0 15px rgba(253, 193, 0, 0.2);
+}
+
+.info-box p {
+    color: #d1d5db;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+}
+
+.stats-box {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.75rem 0;
+    border: 2px solid var(--primary);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stats-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(6, 131, 127, 0.3);
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--tertiary);
+    margin-bottom: 0.25rem;
+    text-shadow: 0 0 10px rgba(2, 206, 203, 0.5);
+}
+
+.stats-label {
+    color: #9ca3af;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.history-item {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border-left: 4px solid var(--tertiary);
+    border: 2px solid #2a2a2a;
+    border-left: 4px solid var(--tertiary);
+    transition: all 0.3s ease;
+}
+
+.history-item:hover {
+    border-color: var(--secondary);
+    border-left-color: var(--secondary);
+    box-shadow: 0 0 15px rgba(253, 193, 0, 0.2);
+}
+
+.history-movie {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.history-time {
+    color: #9ca3af;
+    font-size: 0.8rem;
+}
+
+/* Section Headers */
+.section-header {
+    color: var(--tertiary);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 0 1.5rem 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 3px solid var(--secondary);
+    display: inline-block;
+    width: 100%;
+    text-shadow: 0 0 15px rgba(2, 206, 203, 0.5);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    border-top: 2px solid var(--tertiary);
+}
+
+.footer-text {
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Remove backgrounds */
+div[data-testid="stToolbar"] {
+    display: none;
+}
+
+div[data-testid="stDecoration"] {
+    display: none;
+}
+
+div[data-testid="stStatusWidget"] {
+    display: none;
+}
+
+/* Better spacing */
+[data-testid="column"] {
+    padding: 0 0.75rem;
+}
+
+/* Ensure all text is visible */
+p,
+span,
+div,
+label {
+    color: #ffffff;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff !important;
+}

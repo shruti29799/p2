@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/__init__.py
+src/scr.egg-info/PKG-INFO
+src/scr.egg-info/SOURCES.txt
+src/scr.egg-info/dependency_links.txt
+src/scr.egg-info/requires.txt
+src/scr.egg-info/top_level.txt

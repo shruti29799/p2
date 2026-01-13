@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: scr
+Version: 0.0.1
+Summary: A simple python movie recommendation
+Author: Shruti
+Author-email: shruti.katulkar2@gmail.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Movies Recommendation System 
